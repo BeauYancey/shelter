@@ -1,0 +1,5 @@
+.calendarDay {
+  &:hover {
+    background-color: var(--mantine-color-gray-0);
+  }
+}

@@ -2,13 +2,13 @@ import Header from "./Header"
 import Footer from "./Footer"
 
 export default function Layout ({ children }: { children: React.ReactNode }) {
-    return (
-        <>
-            <Header />
-                <main style={{ padding: '15rem 3rem' }}>
-                    {children}
-                </main>
-            <Footer />
-        </>
-    )
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Header />
+        <main style={{ flex: 1 }}>
+          {children}
+        </main>
+      <Footer />
+    </div>
+  )
 }

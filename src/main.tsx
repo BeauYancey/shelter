@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createTheme, MantineProvider } from '@mantine/core'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App.tsx'
 
 import '@mantine/core/styles.css'
-import { BrowserRouter } from 'react-router-dom'
 
 const theme = createTheme({
   fontFamily: '"Nunito Sans", sans-serif',
