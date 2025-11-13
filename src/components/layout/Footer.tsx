@@ -1,11 +1,11 @@
 export default function Footer () {
     return (
         <footer style={{ 
-            backgroundColor: '#e3f2fd', 
+            backgroundColor: '#605cac', 
             padding: '2rem',
             width: '100%'
         }}>
-            <p>Footer starts here</p>
+            <p style={{color: "#e9ecef"}}>Footer starts here</p>
         </footer>
     )
 }

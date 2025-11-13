@@ -49,6 +49,7 @@ The redesign focuses on user-centered design principles, aiming to help the shel
 | Icons    | [Phosphor](https://phosphoricons.com) | Same icons as the CS Classes project |
 | Typography | [Google Fonts](https://fonts.google.com) | |
 | UI Components | TBD | |
+| Routing | React Router | [Documentation](https://reactrouter.com/start/declarative/navigating) |
 
 ## The Team
 - Beau Y

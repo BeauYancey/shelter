@@ -1,5 +1,6 @@
 import { Stack, Title, Group, Menu, Anchor } from '@mantine/core'
 import { IconChevronDown } from '@tabler/icons-react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   const linkStyle = {
@@ -21,16 +22,17 @@ export default function Header() {
     <header style={{ borderBottom: '1px solid #e9ecef' }}>
       <Stack gap={0}>
         <div style={{ 
-          backgroundColor: '#e3f2fd', 
+          backgroundColor: '#605cac', 
           padding: '2rem',
           width: '100%'
         }}>
-          <Title order={1} ta="center" size="2rem" c="gray">ANIMAL SHELTER</Title>
+          <Title order={1} ta="center" size="2rem" c="#e9ecef">ANIMAL SHELTER</Title>
         </div>
         
         <Group justify="space-evenly" style={{ padding: '1.5rem 3rem', backgroundColor: '#fff' }}>
           <Anchor 
-            href="/" 
+            component={Link}
+            to="/" 
             underline="never" 
             c="dark" 
             fw={500} 
@@ -55,11 +57,11 @@ export default function Header() {
               </Anchor>
             </Menu.Target>
             <Menu.Dropdown>
-              <Menu.Item component="a" href="/about/blog">Blog</Menu.Item>
+              <Menu.Item component={Link} to="/about/blog">Blog</Menu.Item>
               <Menu.Label>Calendar</Menu.Label>
-              <Menu.Item component="a" href="/about/calendar/hours">Hours of operation</Menu.Item>
-              <Menu.Item component="a" href="/about/calendar/fundraising">Fundraising events</Menu.Item>
-              <Menu.Item component="a" href="/about/calendar/clinics">Clinics</Menu.Item>
+              <Menu.Item component={Link} to="/about/calendar/hours">Hours of operation</Menu.Item>
+              <Menu.Item component={Link} to="/about/calendar/fundraising">Fundraising events</Menu.Item>
+              <Menu.Item component={Link} to="/about/calendar/clinics">Clinics</Menu.Item>
             </Menu.Dropdown>
           </Menu>
 
@@ -77,14 +79,15 @@ export default function Header() {
               </Anchor>
             </Menu.Target>
             <Menu.Dropdown>
-              <Menu.Item component="a" href="/adopt/how-to">How to adopt</Menu.Item>
-              <Menu.Item component="a" href="/adopt/application">Adoption application</Menu.Item>
-              <Menu.Item component="a" href="/adopt/pets">Pets available</Menu.Item>
+              <Menu.Item component={Link} to="/adopt/how-to">How to adopt</Menu.Item>
+              <Menu.Item component={Link} to="/adopt/application">Adoption application</Menu.Item>
+              <Menu.Item component={Link} to="/adopt/pets">Pets available</Menu.Item>
             </Menu.Dropdown>
           </Menu>
 
           <Anchor 
-            href="/lost-found" 
+            component={Link}
+            to="/lost-found" 
             underline="never" 
             c="dark" 
             fw={500} 
@@ -109,10 +112,10 @@ export default function Header() {
               </Anchor>
             </Menu.Target>
             <Menu.Dropdown>
-              <Menu.Item component="a" href="/get-involved/donation">Donation</Menu.Item>
-              <Menu.Item component="a" href="/get-involved/volunteering">Volunteering</Menu.Item>
-              <Menu.Item component="a" href="/get-involved/fostering">Fostering</Menu.Item>
-              <Menu.Item component="a" href="/get-involved/fundraisers">Fundraisers</Menu.Item>
+              <Menu.Item component={Link} to="/get-involved/donation">Donation</Menu.Item>
+              <Menu.Item component={Link} to="/get-involved/volunteering">Volunteering</Menu.Item>
+              <Menu.Item component={Link} to="/get-involved/fostering">Fostering</Menu.Item>
+              <Menu.Item component={Link} to="/get-involved/fundraisers">Fundraisers</Menu.Item>
             </Menu.Dropdown>
           </Menu>
 
@@ -130,9 +133,9 @@ export default function Header() {
               </Anchor>
             </Menu.Target>
             <Menu.Dropdown>
-              <Menu.Item component="a" href="/services/euthanasia">Euthanasia</Menu.Item>
-              <Menu.Item component="a" href="/services/clinics">Clinics</Menu.Item>
-              <Menu.Item component="a" href="/services/surrender">Pet surrender</Menu.Item>
+              <Menu.Item component={Link} to="/services/euthanasia">Euthanasia</Menu.Item>
+              <Menu.Item component={Link} to="/services/clinics">Clinics</Menu.Item>
+              <Menu.Item component={Link} to="/services/surrender">Pet surrender</Menu.Item>
             </Menu.Dropdown>
           </Menu>
         </Group>
