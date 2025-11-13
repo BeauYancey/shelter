@@ -1,5 +1,13 @@
+import Layout from './components/Layout.tsx'
+
 function App() {
-  return "South Utah Valley Animal Shelter"
+  return (
+    <>
+      <Layout>
+        <h1>South Utah Valley Animal Shelter</h1>
+      </Layout>
+    </>
+  )
 }
 
 export default App
