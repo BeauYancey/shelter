@@ -1,12 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/layout/Layout.tsx'
+import HomePage from './pages/HomePage.tsx'
 
 function App() {
   return (
     <>
       <Layout>
         <Routes>
-          <Route index element={<div>Home Page</div>} />
+          <Route index element={<HomePage />} />
 
           <Route path="about">
             <Route path="blog" element={<div>Blog Page</div>} />
