@@ -12,7 +12,7 @@ export interface Event {
   photo?: string
 }
 
-interface Time {
+export interface Time {
   hours: number;
   minutes: number;
 }

@@ -33,7 +33,7 @@ export default function CalendarEvent({event}: CalendarEventProps) {
         >
           <Text 
             size="sm"
-            c={colors[event.type][8]}
+            c={colors[event.type][9]}
             lineClamp={1}
           >
             {event.name}
