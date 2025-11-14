@@ -60,12 +60,11 @@ export default function Calendar({ maxWidth }: CalendarProps) {
       {/* Calendar Grid */}
       <SimpleGrid cols={7} spacing="xs" verticalSpacing="xs">
         {days.map(d => {
-          const isCurrentMonth = d.month() === month.month();
           const dayEvents = getDayEvents(d);
 
           return (
             <Box key={d.toString()}>
-              <CalendarDay dimmed={isCurrentMonth} date={d} events={dayEvents} />
+              <CalendarDay date={d} events={dayEvents} />
             </Box>
           )
         })}

@@ -1,6 +1,6 @@
 import { Box, Card, Popover, Text, useMantineTheme, Group, Divider, Image } from "@mantine/core"
 import type { Event } from "../../types/Event"
-import { IconCalendar, IconClock, IconInfoCircle, IconMapPin } from "@tabler/icons-react";
+import { IconClock, IconInfoCircle, IconMapPin } from "@tabler/icons-react";
 
 interface CalendarEventProps {
   event: Event
