@@ -1,4 +1,4 @@
-import { Stack, Title, Group, Menu, Anchor } from '@mantine/core'
+import { Title, Group, Menu, Anchor } from '@mantine/core'
 import { IconChevronDown } from '@tabler/icons-react'
 import { Link } from 'react-router-dom'
 
@@ -19,17 +19,19 @@ export default function Header() {
   }
 
   return (
-    <header style={{ borderBottom: '1px solid #e9ecef' }}>
-      <Stack gap={0}>
+    <>
+      <header style={{ borderBottom: '1px solid #e9ecef' }}>
         <div style={{ 
           backgroundColor: '#605cac', 
-          padding: '2rem',
+          padding: '1.5rem',
           width: '100%'
         }}>
-          <Title order={1} ta="center" size="2rem" c="#e9ecef">ANIMAL SHELTER</Title>
+          <Title order={1} ta="center" size="2rem" c="var(--mantine-color-white)">ANIMAL SHELTER</Title>
         </div>
+      </header>
         
-        <Group justify="space-evenly" style={{ padding: '1.5rem 3rem', backgroundColor: '#fff' }}>
+      <nav style={{ position: "sticky", top: 0, borderBottom: "1px solid #e9ecef", zIndex: 100 }}>
+        <Group justify="space-evenly" style={{ padding: '0.5rem 3rem', backgroundColor: '#fff' }}>
           <Anchor 
             component={Link}
             to="/" 
@@ -139,7 +141,7 @@ export default function Header() {
             </Menu.Dropdown>
           </Menu>
         </Group>
-      </Stack>
-    </header>
+      </nav>
+    </>
   )
 }
