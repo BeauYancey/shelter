@@ -1,7 +1,18 @@
 import { Paper, Grid, Stack, Group, Avatar, Title, Divider, Image, Text, Anchor, ActionIcon } from "@mantine/core";
-import { IconDotsVertical, IconHeart } from "@tabler/icons-react";
+import { IconDotsVertical, IconHeart, IconHeartFilled } from "@tabler/icons-react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function BlogFeature() {
+  const [userLiked, setUserLiked] = useState(false);
+  const [likes, setLikes] = useState(2);
+
+  const handleLikeButtonClick = () => {
+    const diff = userLiked ? -1 : 1;
+    setUserLiked(prev => !prev);
+    setLikes(prev => prev + diff);
+  }
+
   return (
     <Paper shadow="xs" m="sm" bdrs="md" bd="1px solid lightgray" style={{overflow: "hidden"}}>
       <Grid>
@@ -26,8 +37,9 @@ export default function BlogFeature() {
                 </Group>
                 <IconDotsVertical />
               </Group>
+
               {/* Title */}
-              <Anchor>
+              <Anchor component={Link} to="/blog/post-id-here">
                 <Title order={3}>What to Expect When Adopting a Shelter Pet and Helping Them Feel at Home</Title>
               </Anchor>
 
@@ -46,9 +58,12 @@ export default function BlogFeature() {
                   <Text size="sm">0 comments</Text>
                 </Group>
                 <Group gap="2">
-                  <Text size="sm">2</Text>
-                  <ActionIcon variant="transparent">
-                    <IconHeart size={20} color="var(--mantine-color-purple-7)"/>
+                  <Text size="sm">{likes}</Text>
+                  <ActionIcon variant="transparent" onClick={handleLikeButtonClick}>
+                    {userLiked
+                      ? <IconHeartFilled size={20} color="var(--mantine-color-purple-7)"/>
+                      : <IconHeart size={20} color="var(--mantine-color-purple-7)"/>
+                    }
                   </ActionIcon>
                 </Group>
               </Group>

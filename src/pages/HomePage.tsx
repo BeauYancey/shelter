@@ -1,8 +1,11 @@
 import { Box, Stack, Title, Text, Group, Image, Grid, Space, Center, Button } from "@mantine/core";
 import Calendar from "../components/calendar/Calendar";
 import BlogFeature from "../components/BlogFeature";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
+  const navigate = useNavigate();
+
   return (
     <Box p="xl">
       {/* About us */}
@@ -41,7 +44,7 @@ export default function HomePage() {
       <Title order={1}>What we're saying</Title>
       <BlogFeature />
       <Center w="100%">
-        <Button>Read More Blog Posts</Button>
+        <Button onClick={() => navigate("/blog")}>Read More Blog Posts</Button>
       </Center>
       
     </Box>
