@@ -38,7 +38,7 @@ export default function Calendar({ maxWidth }: CalendarProps) {
       maw={maxWidth}
     >
       {/* Month Header */}
-      <Group gap="xl" mb="xl" justify="center">
+      <Group gap="xl" mb="sm" justify="center">
         <Button onClick={handlePrevMonth} variant="subtle">            
           <IconChevronLeft />
         </Button>
