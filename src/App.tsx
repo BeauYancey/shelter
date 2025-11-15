@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/layout/Layout.tsx'
 import HomePage from './pages/HomePage.tsx'
+import BlogPage from './pages/BlogPage.tsx'
+import BlogPost from './pages/BlogPost.tsx'
 
 function App() {
   return (
@@ -10,10 +12,9 @@ function App() {
           <Route index element={<HomePage />} />
 
           <Route path="about">
-            <Route path="blog" element={<div>Blog Page</div>} />
-            <Route path="calendar/hours" element={<div>Hours Page</div>} />
-            <Route path="calendar/fundraising" element={<div>Fundraising Page</div>} />
-            <Route path="calendar/clinics" element={<div>Clinics Page</div>} />
+            <Route path="blog" element={<BlogPage />} />
+            <Route path="blog/:id" element={<BlogPost />} />
+            <Route path="calendar" element={<div>Calendar Page</div>} />
           </Route>
 
           <Route path="adopt">

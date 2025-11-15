@@ -2,6 +2,7 @@ import { Box, Stack, Title, Text, Group, Image, Grid, Space, Center, Button } fr
 import Calendar from "../components/calendar/Calendar";
 import BlogFeature from "../components/BlogFeature";
 import { useNavigate } from "react-router-dom";
+import { posts } from "../data/blog";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -42,9 +43,9 @@ export default function HomePage() {
 
       {/* Featured blog post */}
       <Title order={1}>What we're saying</Title>
-      <BlogFeature />
+      <BlogFeature post={posts[0]}/>
       <Center w="100%">
-        <Button onClick={() => navigate("/blog")}>Read More Blog Posts</Button>
+        <Button onClick={() => navigate("/about/blog")}>Read More Blog Posts</Button>
       </Center>
       
     </Box>
