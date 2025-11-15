@@ -3,6 +3,7 @@ import Layout from './components/layout/Layout.tsx'
 import HomePage from './pages/HomePage.tsx'
 import BlogPage from './pages/BlogPage.tsx'
 import BlogPost from './pages/BlogPost.tsx'
+import NotFound from './pages/NotFound.tsx'
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
             <Route path="clinics" element={<div>Clinics Page</div>} />
             <Route path="surrender" element={<div>Pet Surrender Page</div>} />
           </Route>
+
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Layout>
     </>
