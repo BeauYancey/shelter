@@ -10,10 +10,12 @@ import AdoptPage from './pages/AdoptPage.tsx';
 import AdoptionProcessPage from './pages/AdoptionProcessPage.tsx';
 import AdoptionApplicationPage from './pages/AdoptionApplicationPage.tsx';
 import LostAndFoundPage from './pages/LostAndFoundPage.tsx';
+import ScrollToTop from './components/ScrollToTop.tsx'
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route index element={<HomePage />} />
