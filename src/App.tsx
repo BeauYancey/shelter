@@ -5,6 +5,7 @@ import BlogPage from './pages/BlogPage.tsx'
 import BlogPost from './pages/BlogPost.tsx'
 import NotFound from './pages/NotFound.tsx'
 import CalendarPage from './pages/CalendarPage.tsx'
+import NewsletterPage from './pages/NewsletterPage.tsx'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="about">
             <Route path="blog" element={<BlogPage />} />
             <Route path="blog/:id" element={<BlogPost />} />
+            <Route path="newsletter" element={<NewsletterPage />} />
             <Route path="calendar" element={<CalendarPage />} />
           </Route>
 

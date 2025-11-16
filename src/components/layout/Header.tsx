@@ -60,6 +60,7 @@ export default function Header() {
             </Menu.Target>
             <Menu.Dropdown>
               <Menu.Item component={Link} to="/about/blog">Blog</Menu.Item>
+              <Menu.Item component={Link} to="/about/newsletter">Newsletter</Menu.Item>
               <Menu.Item component={Link} to="/about/calendar">Calendar</Menu.Item>
             </Menu.Dropdown>
           </Menu>

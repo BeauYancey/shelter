@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { posts } from "../data/blog";
-import { Paper, Stack, Title, Text, Divider, Group, ActionIcon, SimpleGrid, Textarea, Skeleton, Image } from "@mantine/core";
+import { Paper, Stack, Title, Text, Divider, Group, ActionIcon, SimpleGrid, Textarea, Skeleton, Image, Button } from "@mantine/core";
 import { IconHeartFilled, IconHeart, IconBrandMeta, IconBrandX, IconBrandLinkedin, IconLink } from "@tabler/icons-react";
 import { useState } from "react";
 import BlogFeature from "../components/BlogFeature";
@@ -81,7 +81,10 @@ export default function BlogPost() {
 
       <Stack w="100%" maw="64rem">
         <Title order={3}>Comments</Title>
-        <Textarea w="100%" placeholder="Start typing..." autosize/>
+        <Stack gap={8}>
+          <Textarea w="100%" placeholder="Start typing..." autosize/>
+          <Button w="fit-content">Submit</Button>
+        </Stack>
         <Skeleton h="10rem" w="100%" bdrs="sm"/>
       </Stack>
       
