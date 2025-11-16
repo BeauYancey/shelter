@@ -6,6 +6,10 @@ import BlogPost from './pages/BlogPost.tsx'
 import NotFound from './pages/NotFound.tsx'
 import CalendarPage from './pages/CalendarPage.tsx'
 import NewsletterPage from './pages/NewsletterPage.tsx'
+import AdoptPage from './pages/AdoptPage.tsx';
+import AdoptionProcessPage from './pages/AdoptionProcessPage.tsx';
+import AdoptionApplicationPage from './pages/AdoptionApplicationPage.tsx';
+import LostAndFoundPage from './pages/LostAndFoundPage.tsx';
 
 function App() {
   return (
@@ -22,12 +26,12 @@ function App() {
           </Route>
 
           <Route path="adopt">
-            <Route path="how-to" element={<div>How to Adopt Page</div>} />
-            <Route path="application" element={<div>Adoption Application</div>} />
-            <Route path="pets" element={<div>Adopt a Pet</div>} />
+            <Route path="how-to" element={<AdoptionProcessPage />} />
+            <Route path="application" element={<AdoptionApplicationPage />} />
+            <Route path="pets" element={<AdoptPage />} />
           </Route>
 
-          <Route path="lost-found" element={<div>Lost & Found Page</div>} />
+          <Route path="lost-found" element={<LostAndFoundPage />} />
 
           <Route path="get-involved">
             <Route path="donation" element={<div>Donation Page</div>} />
