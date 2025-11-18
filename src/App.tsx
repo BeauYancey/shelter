@@ -6,11 +6,19 @@ import BlogPost from './pages/BlogPost.tsx'
 import NotFound from './pages/NotFound.tsx'
 import CalendarPage from './pages/CalendarPage.tsx'
 import NewsletterPage from './pages/NewsletterPage.tsx'
-import AdoptPage from './pages/AdoptPage.tsx';
-import AdoptionProcessPage from './pages/AdoptionProcessPage.tsx';
-import AdoptionApplicationPage from './pages/AdoptionApplicationPage.tsx';
-import LostAndFoundPage from './pages/LostAndFoundPage.tsx';
+import AdoptPage from './pages/AdoptPage.tsx'
+import AdoptionProcessPage from './pages/AdoptionProcessPage.tsx'
+import AdoptionApplicationPage from './pages/AdoptionApplicationPage.tsx'
+import LostAndFoundPage from './pages/LostAndFoundPage.tsx'
+import DonationPage from './pages/DonationPage.tsx'
+import VolunteerPage from './pages/VolunteerPage.tsx'  
 import ScrollToTop from './components/ScrollToTop.tsx'
+import FosteringPage from './pages/FosteringPage.tsx'
+import FundraisersPage from './pages/FundraisersPage.tsx'
+import EuthanasiaPage from './pages/EuthanasiaPage.tsx'
+import ClinicsPage from './pages/ClinicsPage.tsx'
+import PetSurrenderPage from './pages/PetSurrenderPage.tsx'
+
 
 function App() {
   return (
@@ -36,16 +44,16 @@ function App() {
           <Route path="lost-found" element={<LostAndFoundPage />} />
 
           <Route path="get-involved">
-            <Route path="donation" element={<div>Donation Page</div>} />
-            <Route path="volunteering" element={<div>Volunteering Page</div>} />
-            <Route path="fostering" element={<div>Fostering Page</div>} />
-            <Route path="fundraisers" element={<div>Fundraisers Page</div>} />
+            <Route path="donation" element={<DonationPage />} />
+            <Route path="volunteering" element={<VolunteerPage />} /> 
+            <Route path="fostering" element={<FosteringPage />} />
+            <Route path="fundraisers" element={<FundraisersPage />} />
           </Route>
 
           <Route path="services">
-            <Route path="euthanasia" element={<div>Euthanasia Page</div>} />
-            <Route path="clinics" element={<div>Clinics Page</div>} />
-            <Route path="surrender" element={<div>Pet Surrender Page</div>} />
+            <Route path="euthanasia" element={<EuthanasiaPage />} />
+            <Route path="clinics" element={<ClinicsPage />} />
+            <Route path="surrender" element={<PetSurrenderPage />} />
           </Route>
 
           <Route path="*" element={<NotFound/>}/>
