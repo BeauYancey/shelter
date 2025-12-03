@@ -1,5 +1,5 @@
 import { Container, Title, Text, Paper, Stack, Alert, Table, Badge, Divider, Button, Group } from '@mantine/core'
-import { IconInfoCircle, IconCalendar, IconMapPin, IconCurrency, IconAlertTriangle } from '@tabler/icons-react'
+import { IconCalendar, IconMapPin, IconCurrency, IconAlertTriangle } from '@tabler/icons-react'
 
 export default function ClinicsPage() {
   const clinics = [

@@ -1,4 +1,4 @@
-import { Container, Title, Text, Paper, Stack, Alert, List, Anchor, Divider } from '@mantine/core'
+import { Container, Title, Text, Paper, Stack, Alert, List, Anchor } from '@mantine/core'
 import { IconAlertCircle, IconHeart, IconExternalLink } from '@tabler/icons-react'
 
 export default function PetSurrenderPage() {
