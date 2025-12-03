@@ -26,6 +26,7 @@ export const pets: Pet[] = [
     sex: "female",
     weight: 28,
     intakeDate: new Date(2025, 7, 1),
+    description: "Chimera has a spark that’s hard to miss. She loves zooming around in the yard and figuring out new toys. Once she’s had a good romp, she’s all about curling up beside her favorite person. She’s clever, playful, and ready for a home that can keep up with her energy",
     // No adotion fee specified means "call for details"
     photos: [
       "https://www.purina.com/sites/default/files/2025-09/american_staffordshire_terrier_4_1.jpg",
@@ -56,6 +57,7 @@ export const pets: Pet[] = [
     sex: "male",
     weight: 41,
     intakeDate: new Date(2025, 10, 3),
+    description: "Nibbles is a social butterfly who can make friends in a heartbeat. Walks, play sessions, meeting new dogs, he’s game for it all. If you’re looking for a cheerful companion who brings joy wherever he goes, Nibbles is your guy.",
     adoptionFee: 95,
     photos: [
       "https://www.petplace.com/article/breed/media_1c08c8268d48597ec93f516ad12f23f0786d9b2a8.jpeg?width=450&format=jpeg&optimize=medium"
@@ -70,6 +72,7 @@ export const pets: Pet[] = [
     sex: "female",
     weight: 36,
     intakeDate: new Date(2025, 8, 2),
+    description: "Melon is full of energy and loves showing off her clever tricks. She's always ready for a run in the yard or a game of fetch, but she also knows how to relax and watch the world go by. Melon would thrive with a family who enjoys adventure and a playful companion.",
     adoptionFee: 90,
     photos: [
       "https://cdn.shopify.com/s/files/1/0696/9265/3873/files/jen-1.webp?v=1672306956",
@@ -85,6 +88,7 @@ export const pets: Pet[] = [
     sex: "male",
     weight: 24,
     intakeDate: new Date(2025, 9, 12),
+    description: "Puck is a cheerful, easygoing pup who loves hanging out with people and enjoying relaxed playtime. He's friendly, charming, and always ready for a little attention. Puck is hoping to find a cozy home where he can settle in and share his sweet personality.",
     adoptionFee: 80,
     photos: [
       "https://www.akc.org/wp-content/uploads/2020/01/American-Bulldog-standing-in-three-quarter-view-400x267.jpg"
@@ -99,6 +103,7 @@ export const pets: Pet[] = [
     sex: "male",
     weight: 50,
     intakeDate: new Date(2025, 9, 23),
+    description: "MooShoo is full of personality and always up to something silly. He loves chasing balls, investigating new smells, and finding cozy nooks for naps. His playful antics are sure to make you smile, and he’s looking for a family that loves a little mischief with their cuddles.",
     adoptionFee: 80,
     photos: [
       "https://image.petmd.com/files/styles/978x550/public/2023-12/treeing-walker-coonhound.jpg"
@@ -113,6 +118,7 @@ export const pets: Pet[] = [
     sex: "male",
     weight: 9,
     intakeDate: new Date(2025, 10, 29),
+    description: "Lychee is a curious and clever boy who loves climbing to high perches and observing everything around him. He has a playful streak and enjoys interactive toys, but he’s also content curling up in a sunny spot for a nap. He’s ready to charm a home that appreciates his quirky personality.",
     adoptionFee: 50,
     photos: [
       "https://cdn-fastly.petguide.com/media/2022/02/16/8260199/domestic-medium-hair.jpg?size=1200x628",
@@ -128,6 +134,7 @@ export const pets: Pet[] = [
     sex: "male",
     weight: 4,
     intakeDate: new Date(2025, 7, 22),
+    description: "McLaren is a tiny whirlwind of energy who can’t resist chasing anything that moves. This adventurous kitten is fearless and always exploring, making every day an exciting game. McLaren would thrive in a lively home where he can get plenty of attention and space to play.",
     adoptionFee: 50,
     photos: [
       "https://www.catster.com/wp-content/uploads/2023/11/American-shorthair-cat-kitten-sitting_Top-Photo-Engineer_Shutterstock.jpg"
@@ -142,6 +149,7 @@ export const pets: Pet[] = [
     sex: "female",
     weight: 3,
     intakeDate: new Date(2025, 7, 22),
+    description: "Porsche is a sweet, affectionate kitten who loves snuggles and gentle pets. She's curious about her surroundings and enjoys exploring new nooks and crannies. Porsche would do best in a loving home where she can play, cuddle, and show off her charming personality.",
     adoptionFee: 50,
     photos: [
       "https://domesticshorthaircat.weebly.com/uploads/1/4/2/0/142058815/published/domestic-shorthair-cat-2.jpg?1654044662"
@@ -156,6 +164,7 @@ export const pets: Pet[] = [
     sex: "female",
     weight: 11,
     intakeDate: new Date(2025, 8, 28),
+    description: "Sugar Britches is a dignified lady with a soft spot for quiet moments and gentle pets. She enjoys watching the world from her favorite sunny spots and takes her time warming up to new friends. She’s looking for a calm home where she can feel safe and appreciated.",
     adoptionFee: 40,
     photos: [
       "https://d3544la1u8djza.cloudfront.net/APHI/Blog/2022/02-11/gray+stripe+domestic+shortahair+tabby+cat+resting+in+a+maroon+cat+tree+bed-min.jpg"
@@ -170,6 +179,7 @@ export const pets: Pet[] = [
     sex: "male",
     weight: 6.5,
     intakeDate: new Date(2025, 8, 11),
+    description: "Dewey is a calm, easygoing rabbit who enjoys stretching out in his favorite spots and nibbling on fresh greens. He’s mellow but curious, and he appreciates gentle interaction. Dewey would fit perfectly in a home that values a relaxed, low-key companion.",
     adoptionFee: 30,
     photos: [
       "https://image.petmd.com/files/styles/863x625/public/2023-10/rex.rabbit.jpg",
@@ -185,6 +195,7 @@ export const pets: Pet[] = [
     sex: "female",
     weight: 3.8,
     intakeDate: new Date(2025, 10, 30),
+    description: "Tinsel is a curious and charming little bunny who loves to hop around and explore the world around her. She enjoys gentle attention and treats, and she has a playful side that pops out when she's feeling adventurous. Tinsel is ready for a home that can enjoy her spirited personality.",
     adoptionFee: 25,
     photos: [
       "https://ccspca.com/wp-content/uploads/2017/11/Mini-Rex-Rabbit.png"
@@ -199,6 +210,7 @@ export const pets: Pet[] = [
     sex: "male",
     weight: 6.2,
     intakeDate: new Date(2025, 11, 9),
+    description: "Nesquik is a lively little guinea pig who loves exploring tunnels and munching on fresh veggies. He’s social, curious, and has a playful personality that shines when he’s around people. Nesquik would be happiest in a home that encourages his curious nature.",
     adoptionFee: 20,
     photos: [
       "https://as2.ftcdn.net/jpg/01/24/55/07/1000_F_124550714_CYLLkpqgdKSlxlXOHtKq62wYRMIF8JcA.jpg"
@@ -213,6 +225,7 @@ export const pets: Pet[] = [
     sex: "female",
     weight: 1.8,
     intakeDate: new Date(2025, 11, 10),
+    description: "Katie is a gentle and calm guinea pig who loves quiet companionship and tasty treats. She enjoys snuggling in cozy spots and spending time with her favorite people. Katie is looking for a peaceful home where she can relax and feel safe while receiving lots of love.",
     adoptionFee: 20,
     photos: [
       "https://cdn.shopify.com/s/files/1/0530/3762/9610/files/ginger_and_white_american_guinea_pig_1024x1024.png?v=1669036589",

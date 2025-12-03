@@ -129,7 +129,7 @@ const AnimalCard: React.FC<AnimalCardProps> = ({ animal }) => {
           </Grid.Col>
         </Grid>
 
-        <Text size="sm" style={{ lineHeight: 1.6 }}>
+        <Text size="sm" style={{ lineHeight: 1.6 }} lineClamp={7}>
           {animal.description}
         </Text>
 
