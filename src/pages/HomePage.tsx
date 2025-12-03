@@ -23,15 +23,18 @@ export default function HomePage() {
           </Group>
         </Grid.Col>
         <Grid.Col span={{base: 12, md: 7}} order={{base: 1, md: 2}}>
-          <Stack>
-            <Title order={1}>Get to know SUVAS</Title>
-            <Text>
-              At South Utah Valley Animal Shelter, we proudly serve the animals and residents of southern Utah County including Elk Ridge, 
-              Mapleton, Payson, Provo, Salem, Santaquin, Spanish Fork, Springville, and Woodland Hills. Our primary goal is to reunite lost 
-              pets with their families. For animals that are not reclaimed, we work tirelessly to place them in caring, permanent homes through 
-              our adoption program and by collaborating with trusted local rescue groups. Every animal deserves compassion, and we're here to 
-              give them that.
-            </Text>
+          <Stack h="100%" justify="space-between" align="center">
+            <Stack>
+              <Title order={1}>Get to know SUVAS</Title>
+              <Text>
+                At South Utah Valley Animal Shelter, we proudly serve the animals and residents of southern Utah County including Elk Ridge, 
+                Mapleton, Payson, Provo, Salem, Santaquin, Spanish Fork, Springville, and Woodland Hills. Our primary goal is to reunite lost 
+                pets with their families. For animals that are not reclaimed, we work tirelessly to place them in caring, permanent homes through 
+                our adoption program and by collaborating with trusted local rescue groups. Every animal deserves compassion, and we're here to 
+                give them that.
+              </Text>
+            </Stack>
+            <Button w="90%" maw="40rem" onClick={() => navigate("/adopt/pets")}>Meet our pets!</Button>
           </Stack>
         </Grid.Col>
       </Grid>
