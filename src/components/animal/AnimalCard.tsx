@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import type { Pet } from '../../types/Pet';
+import { useNavigate } from 'react-router-dom';
 import { Card, Image, Text, Badge, Button, Group, Stack, Grid } from '@mantine/core';
 
 interface AnimalCardProps {
@@ -7,6 +8,7 @@ interface AnimalCardProps {
 }
 
 const AnimalCard: React.FC<AnimalCardProps> = ({ animal }) => {
+  const navigate = useNavigate();
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState<number>(0);
 
   const formatDate = (date: Date): string => {
@@ -30,7 +32,7 @@ const AnimalCard: React.FC<AnimalCardProps> = ({ animal }) => {
   };
 
   return (
-    <Card shadow="md" padding="lg" radius="md" withBorder style={{ maxWidth: 400 }}>
+    <Card shadow="md" padding="lg" radius="md" withBorder style={{ maxWidth: 400 }} onClick={() => navigate("/adopt/application")}>
       <Card.Section style={{ position: 'relative' }}>
         <Image
           src={animal.photos[currentPhotoIndex]}
